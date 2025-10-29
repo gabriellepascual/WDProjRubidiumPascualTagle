@@ -23,3 +23,25 @@
 ### Song/Audio Player: JavaScript will be used to play short previews of TWICE’s songs when clicking on an album cover.
 ### Discography Filters: Users can click buttons to filter albums by category (Full Album, Mini Album, Repackage) or by year. The content will update instantly without reloading the page.
 ### Footer Year: The copyright year in the footer will automatically update every year using a short JS script.
+******
+#### Wireframes:
+#### Home Page:
+#### ![Home Page](assets/wireframe/1.png)
+#### Menu:
+#### ![Menu](assets/wireframe/2.png)
+#### Members:
+#### ![Members](assets/wireframe/3.png)
+#### ![Members](assets/wireframe/4.png)
+#### ![Members](assets/wireframe/5.png)
+#### Members Expanded:
+#### ![Members Expanded](assets/wireframe/6.png)
+#### Debut:
+#### ![Debut](assets/wireframe/7.png)
+#### Discography:
+#### ![Discography](assets/wireframe/8.png)
+#### Discography Expanded:
+#### ![Discography Expanded](assets/wireframe/9.png)
+#### Credentials:
+#### ![Credentials](assets/wireframe/10.png)
+#### Sources:
+#### ![Sources](assets/wireframe/11.png)
