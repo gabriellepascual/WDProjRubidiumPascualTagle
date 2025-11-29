@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Stardust Performers</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;800&display=swap" rel="stylesheet">
+
+    <style>
+        :root {
+            --nav-height: 72px;
+            --footer-height: 50px;
+        }
+
+        * { box-sizing: border-box; }
+
+        body {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            height: 100vh;
+            font-family: "Poppins", sans-serif;
+            background-color: #14181e;
+            color: #fff;
+            overflow: hidden;
+        }
+
+        nav {
+            background-color: #ffeff5;
+            padding: 10px 26px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            left: 0;
+            height: var(--nav-height);
+            z-index: 100;
+        }
+
+        .nav-left { display: flex; align-items: center; gap: 12px; }
+
+        .logo { width: 42px; height: auto; }
+
+        .website-name {
+            font-size: 22px;
+            font-weight: 700;
+            color: #000;
+            letter-spacing: 0.3px;
+        }
+
+        .menu {
+            margin-right: 10px;
+            display: flex;
+            gap: 12px;
+            white-space: nowrap;
+        }
+
+        .menu a {
+            text-decoration: none;
+            color: #fe84af;
+            font-weight: 500;
+            font-size: 15px;
+            padding: 6px 10px;
+        }
+
+        .menu a.active {
+            color: #ff3176;
+            font-weight: 700;
+        }
+
+        .main-content {
+            margin-top: var(--nav-height);
+            height: calc(100vh - var(--nav-height) - var(--footer-height));
+            width: 100%;
+            background-image: url('../assets/homepage.png');
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            padding-right: 60px;
+            padding-left: 40px;
+        }
+
+        .right-text {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+            max-width: 500px;
+            transform: translateY(20px);
+        }
+
+        .right-text h1 {
+            font-size: 40px;
+            font-weight: 800;
+            margin: 0 0 10px 0;
+            white-space: nowrap;
+        }
+
+        .right-text p {
+            margin: 0;
+            font-size: 19px;
+            text-align: justify;
+            line-height: 1.68;
+        }
+
+        footer {
+            height: var(--footer-height);
+            padding: 10px 28px;
+            background-color: #d9d9d9;
+            color: #ac8694;
+            font-size: 13px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+    </style>
+</head>
+
+<body>
+
+<nav>
+    <div class="nav-left">
+        <img src="../assets/twicelogo.png" class="logo" alt="Twice Logo">
+        <span class="website-name">Stardust Performers</span>
+    </div>
+
+    <div class="menu">
+        <a href="index.html" class="active">Home</a>
+        <a href="menu.html">Menu</a>
+        <a href="members.html">Members</a>
+        <a href="debut.html">Debut</a>
+        <a href="discography.html">Discography</a>
+        <a href="credentials.html">Credentials</a>
+        <a href="sources.html">Sources</a>
+    </div>
+</nav>
+
+<div class="main-content">
+    <div class="right-text">
+        <h1>WELCOME TO STARDUST PERFORMERS!</h1>
+        <p>
+            This website serves as a guide for new ONCEs who are interested in getting to know the girls better.
+            After 10 years together, one can easily follow their journey as a nine-member girl group through this
+            website. Additionally, it showcases their artistry and identity as a group through their music.
+            TWICE’s talents should never go unnoticed—their ability to compose, write, and produce their own songs
+            is truly remarkable. This website stands as an honor to them, celebrating their achievement of lasting
+            10 years as a nine-member group, filled with passion and love for what they do.
+        </p>
+    </div>
+</div>
+
+<footer>
+    © 2025 Pascual, Tagle. All Rights Reserved.
+    <span>Sources:</span>
+</footer>
+
+</body>
+</html>
