@@ -82,6 +82,12 @@ nav {
     gap: 0.5rem;
     box-sizing: border-box;
     overflow: hidden;
+    transition: 0.2s;
+}
+
+.card:hover{
+    transform: scale(1.02);
+    cursor: pointer;
 }
 
 .card-img {
@@ -102,6 +108,11 @@ nav {
     font-size: 1.1rem;
     color: black;
     margin-top: 1rem;
+}
+.c-link {
+    text-decoration: none;
+    display: block;
+    color: inherit;
 }
 
 .card p {
