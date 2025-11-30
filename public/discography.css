@@ -77,8 +77,8 @@ nav {
 }
 
 .album-covers {
-  height: 200px;
-  width: 200px;
+  width: min(180px, 40vw);
+  aspect-ratio: 1 / 1;
   border-radius: 8px;
   overflow: hidden;
 }
@@ -90,16 +90,24 @@ nav {
   display: block;
 }
 
+
 #albums.album--grid {
   display: grid;
-  grid-template-columns: repeat(5, 1fr);
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
   gap: 20px;
   padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  justify-items: center;
+  align-items: start;
 }
+
+
 
 #albums.album--grid .title {
   margin-top: 8px;
   display: block;
+  margin-left: 25px;
 }
 
 
@@ -118,7 +126,7 @@ nav {
 
 #albums.album--vinyl .album {
   perspective: 500px;
-  width: 24px;
+  width: 19px;
   margin: 0 6px;
   transition: width 0.5s;
   position: relative;
