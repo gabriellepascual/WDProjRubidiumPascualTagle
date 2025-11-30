@@ -26,7 +26,13 @@
         </ul>
     </nav>
 <main class="content">
-  <div class="albums">
+<div class="layout-switcher">
+  <span>Layout:</span>
+  <button type="button" data-layout="grid" class="is-active">Grid</button>
+  <button type="button" data-layout="vinyl">Vinyl</button>
+</div>
+
+  <div id="albums" class="albums album--grid">
 
     <div class="album">
       <div class="album-covers">
@@ -274,6 +280,9 @@
     </div>
 
   </div>
+
+      <script src="discography.js"></script>
+
 </main>
 
 

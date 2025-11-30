@@ -72,13 +72,6 @@ nav {
     padding-top: calc(var(--nav-height) + 10px);
 }
 
-.albums {
-  display: grid;
-  grid-template-columns: repeat(5, 1fr); 
-  gap: 20px;
-  padding: 20px;
-}
-
 .album {
   text-align: center;
 }
@@ -94,6 +87,84 @@ nav {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  display: block;
+}
+
+#albums.album--grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 20px;
+  padding: 20px;
+}
+
+#albums.album--grid .title {
+  margin-top: 8px;
+  display: block;
+}
+
+
+#albums.album--vinyl {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-end;
+  height: 230px;
+  margin: 30px auto;
+  overflow: hidden;
+  gap: 0;
+  padding: 0;
+  min-width: 100%;
+}
+
+#albums.album--vinyl .album {
+  perspective: 500px;
+  width: 24px;
+  margin: 0 6px;
+  transition: width 0.5s;
+  position: relative;
+  overflow: visible;
+}
+
+#albums.album--vinyl .album:hover {
+  width: 148px;
+}
+
+#albums.album--vinyl .album-covers {
+  height: 180px;
+  width: 180px;
+}
+
+#albums.album--vinyl .album-covers img {
+  width: 180px;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 4px;
+  border: 2px solid rgba(0, 0, 0, 0.1);
+  transform: rotateY(25deg);
+  transition: transform 0.5s, width 0.5s, height 0.5s, margin-top 0.5s;
+}
+
+#albums.album--vinyl .album:hover .album-covers img {
+  transform: rotateY(10deg);
+  width: 188px;
+  height: 188px;
+  margin-top: -2px;
+}
+
+#albums.album--vinyl .title {
+  display: none;
+  position: absolute;
+  bottom: -25px;
+  width: max-content;
+  text-align: center;
+  font-size: 14px;
+  white-space: nowrap;
+  color: rgb(255, 255, 255);
+  text-shadow: 1px 1px 4px rgba(0,0,0,0.7);
+  padding-bottom: 35px;
+}
+
+#albums.album--vinyl .album:hover .title {
   display: block;
 }
 
