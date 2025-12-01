@@ -85,7 +85,7 @@
 #### ![Discography Expanded](assets/wireframe/51.png)
 #### ![Discography Expanded](assets/wireframe/52.png)
 #### ![Discography Expanded](assets/wireframe/53.png)
-#### Credentials & Credentials Expanded:
+#### Credentials and Credentials Expanded:
 #### ![Credentials](assets/wireframe/54.png)
 #### ![Credentials Expanded](assets/wireframe/55.png)
 #### ![Credentials](assets/wireframe/56.png)
