@@ -12,7 +12,7 @@ body {
   padding: 0;
   display: flex;
   flex-direction: column;
-  height: 100vh;
+  min-height: 100vh;
   font-family: "Poppins", sans-serif;
   background-color: #ffffff;
   color: #000000;
@@ -192,13 +192,45 @@ nav {
   font-size: 14px;
 }
 
-footer {
-  height: var(--footer-height);
-  padding: 10px 28px;
-  background-color: #d9d9d9;
-  color: #ac8694;
-  font-size: 13px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+.site-footer {
+    height: var(--footer-height);
+    width: 100%;
+    background-color: #d9d9d9;
+    padding: 0 28px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 13px;
+    color: #ac8694;
+    margin-top: auto;
+}
+
+.footer-left {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    line-height: 1.4;
+    white-space: nowrap;
+}
+
+.sources-label {
+    margin-top: 2px;
+}
+
+.footer-right {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+}
+
+.footer-right img {
+    width: 16px;
+    height: 16px;
+    object-fit: contain;
+    opacity: 0.8;
+    transition: opacity 0.2s ease;
+}
+
+.footer-right img:hover {
+    opacity: 1;
 }

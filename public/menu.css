@@ -12,13 +12,10 @@ body {
     padding: 0;
     display: flex;
     flex-direction: column;
-    min-height: 100vh;
+    height: 100vh;
     font-family: "Poppins", sans-serif;
     background-color: #ffffff;
     color: #fff;
-    padding-top: var(--nav-height);
-    padding-bottom: var(--footer-height);
-
     overflow-x: hidden;
 }
 
@@ -54,88 +51,6 @@ nav {
     letter-spacing: 0.3px;
 }
 
-.carouselMenu {
-    margin: 100px auto;
-    width: 80%;
-    max-width: 1400px;
-    border: 5px solid #ffffff;
-    overflow: hidden;
-}
-
-.carousel-track {
-    display: flex;
-    animation: spin 18s linear infinite;
-}
-
-.card {
-    flex: 0 0 280px;
-    min-width: 280px;
-    height: 330px;
-    margin-right: 16px;
-    padding: 12px;
-    background: rgb(224, 209, 225);
-    border-radius: 8px;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: flex-start;
-    gap: 0.5rem;
-    box-sizing: border-box;
-    overflow: hidden;
-    transition: 0.2s;
-}
-
-.card:hover{
-    transform: scale(1.02);
-    cursor: pointer;
-}
-
-.card-img {
-    width: 60px;   
-    height: 60px;
-    border-radius: 50%;
-    object-fit: cover;
-    margin: 0 auto;
-    margin-top: 1rem;
-    display: block;
-}
-
-
-.card-title {
-    text-align: center;
-    width: 100%;
-    font-weight: 700;
-    font-size: 1.1rem;
-    color: black;
-    margin-top: 1rem;
-}
-.c-link {
-    text-decoration: none;
-    display: block;
-    color: inherit;
-}
-
-.card p {
-    margin: 1rem 0 0 0;
-    font-size: 0.85rem;
-    color: black;
-    text-align: center;
-    line-height: 1.4;
-    overflow: hidden;
-    display: -webkit-box;
-    -webkit-line-clamp: 6;
-    -webkit-box-orient: vertical;
-}
-
-@keyframes spin {
-    from {
-        transform: translateX(0);
-    }
-    to {
-        transform: translateX(-1480px);
-    }
-}
-
 .menu {
     list-style: none;
     padding: 0;
@@ -162,35 +77,123 @@ nav {
     font-weight: 700;
 }
 
-.right-text {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-    max-width: 500px;
-    transform: translateY(20px);
+.carouselMenu {
+    margin: calc(var(--nav-height) + 28px) auto 0;
+    width: 80%;
+    max-width: 1400px;
+    border: 5px solid #ffffff;
+    overflow: hidden;
+    flex: 1;
 }
 
-.right-text h1 {
-    font-size: 40px;
-    font-weight: 800;
-    margin: 0 0 10px 0;
+.carousel-track {
+    display: flex;
+    animation: spin 18s linear infinite;
+}
+
+@keyframes spin {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(-1480px);
+    }
+}
+
+.card {
+    flex: 0 0 280px;
+    min-width: 280px;
+    height: 330px;
+    margin-right: 16px;
+    padding: 12px;
+    background: rgb(224, 209, 225);
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5rem;
+    overflow: hidden;
+    transition: 0.2s;
+}
+
+.card:hover {
+    transform: scale(1.02);
+    cursor: pointer;
+}
+
+.card-img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin: 1rem auto 0;
+    display: block;
+}
+
+.card-title {
+    text-align: center;
+    width: 100%;
+    font-weight: 700;
+    font-size: 1.1rem;
+    color: black;
+    margin-top: 1rem;
+}
+
+.c-link {
+    text-decoration: none;
+    display: block;
+    color: inherit;
+}
+
+.card p {
+    margin: 1rem 0 0 0;
+    font-size: 0.85rem;
+    color: black;
+    text-align: center;
+    line-height: 1.4;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 6;
+    -webkit-box-orient: vertical;
+}
+
+.site-footer {
+    height: var(--footer-height);
+    background-color: #d9d9d9;
+    padding: 0 28px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 13px;
+    color: #ac8694;
+}
+
+.footer-left {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    line-height: 1.4;
     white-space: nowrap;
 }
 
-.right-text p {
-    margin: 0;
-    font-size: 19px;
-    text-align: justify;
-    line-height: 1.68;
+.sources-label {
+    margin-top: 2px;
 }
 
-footer {
-    height: var(--footer-height);
-    padding: 10px 28px;
-    background-color: #d9d9d9;
-    color: #ac8694;
-    font-size: 13px;
+.footer-right {
     display: flex;
-    flex-direction: column;
-    justify-content: center;
+    align-items: center;
+    gap: 14px;
+}
+
+.footer-right img {
+    width: 16px;
+    height: 16px;
+    object-fit: contain;
+    opacity: 0.8;
+    transition: opacity 0.2s ease;
+}
+
+.footer-right img:hover {
+    opacity: 1;
 }
