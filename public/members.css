@@ -212,7 +212,6 @@ nav {
     gap: 10px;              
     overflow-x: auto;        
     white-space: nowrap;   
-    -webkit-overflow-scrolling: touch; 
     padding-bottom: 5px;    
   }
 
