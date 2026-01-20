@@ -153,3 +153,74 @@ nav {
 .footer-right img:hover {
     opacity: 1;
 }
+
+@media (max-width: 768px) {
+
+  nav {
+    padding: 10px 16px;
+    flex-wrap: wrap;
+  }
+
+  .website-name {
+    font-size: 18px;
+  }
+
+  .menu {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 6px;
+  }
+
+  .menu a {
+    font-size: 13px;
+    padding: 5px 8px;
+  }
+
+  .site-footer {
+    flex-direction: column;
+    gap: 6px;
+    height: auto;
+    padding: 10px;
+    text-align: center;
+  }
+
+  .footer-left {
+    align-items: center;
+    white-space: normal;
+  }
+
+  .footer-right {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 768px) {
+
+  body {
+    overflow: auto;
+  }
+
+  .main-content {
+    height: auto;
+    padding: 30px 20px;
+    justify-content: center;
+    background-position: center top;
+  }
+
+  .right-text {
+    align-items: center;
+    max-width: 100%;
+    transform: none;
+    text-align: center;
+  }
+
+  .right-text h1 {
+    font-size: 26px;
+    white-space: normal;
+  }
+
+  .right-text p {
+    font-size: 15px;
+    text-align: justify;
+  }
+}

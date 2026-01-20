@@ -118,12 +118,12 @@ nav {
   margin-left: 25px;
 }
 
+/* VINYL LAYOUT */
 #albums.album--vinyl {
   display: flex;
-  flex-direction: row;
+  flex-wrap: wrap;
   justify-content: center;
   align-items: flex-end;
-  flex-wrap: wrap;
   margin: 30px auto;
   overflow: visible;
   gap: 0;
@@ -193,44 +193,138 @@ nav {
 }
 
 .site-footer {
-    height: var(--footer-height);
-    width: 100%;
-    background-color: #d9d9d9;
-    padding: 0 28px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    font-size: 13px;
-    color: #ac8694;
-    margin-top: auto;
+  height: var(--footer-height);
+  width: 100%;
+  background-color: #d9d9d9;
+  padding: 0 28px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 13px;
+  color: #ac8694;
+  margin-top: auto;
 }
 
 .footer-left {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    line-height: 1.4;
-    white-space: nowrap;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  line-height: 1.4;
+  white-space: nowrap;
 }
 
 .sources-label {
-    margin-top: 2px;
+  margin-top: 2px;
 }
 
 .footer-right {
-    display: flex;
-    align-items: center;
-    gap: 14px;
+  display: flex;
+  align-items: center;
+  gap: 14px;
 }
 
 .footer-right img {
-    width: 16px;
-    height: 16px;
-    object-fit: contain;
-    opacity: 0.8;
-    transition: opacity 0.2s ease;
+  width: 16px;
+  height: 16px;
+  object-fit: contain;
+  opacity: 0.8;
+  transition: opacity 0.2s ease;
 }
 
 .footer-right img:hover {
-    opacity: 1;
+  opacity: 1;
+}
+
+@media (max-width: 768px) {
+
+  nav {
+    padding: 10px 16px;
+    flex-wrap: wrap;
+  }
+
+  .website-name {
+    font-size: 18px;
+  }
+
+  .menu {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 6px;
+  }
+
+  .menu a {
+    font-size: 13px;
+    padding: 5px 8px;
+  }
+
+  .site-footer {
+    flex-direction: column;
+    gap: 6px;
+    height: auto;
+    padding: 10px;
+    text-align: center;
+  }
+
+  .footer-left {
+    align-items: center;
+    white-space: normal;
+  }
+
+  .footer-right {
+    justify-content: center;
+  }
+
+  .layout-switcher {
+    text-align: center;
+  }
+
+  #albums.album--vinyl {
+    flex-wrap: wrap;
+    justify-content: center;
+    overflow-x: hidden;
+    padding: 10px 0;
+  }
+
+  #albums.album--vinyl .album {
+    flex: 0 0 calc(33% - 12px); 
+    margin: 6px;
+    width: auto;
+    perspective: 500px;
+    overflow: visible;
+  }
+
+  #albums.album--vinyl .album-covers {
+    width: 140px;
+    height: 140px;
+  }
+
+  #albums.album--vinyl .album-covers img {
+    width: 140px;
+    height: 140px;
+    transform: rotateY(25deg);
+    transition: transform 0.5s, width 0.5s, height 0.5s, margin-top 0.5s;
+  }
+
+  #albums.album--vinyl .album:active .album-covers img {
+    transform: rotateY(10deg) scale(1.05);
+    width: 150px;
+    height: 150px;
+    margin-top: -2px;
+  }
+
+  #albums.album--vinyl .title {
+    display: none;
+    font-size: 12px;
+    bottom: -20px;
+  }
+}
+
+.vinyl:hover {
+  transform: rotate(360deg);
+  transition: transform 1.2s linear;
+}
+
+.vinyl.active {
+  transform: rotate(360deg);
+  transition: transform 1.2s linear;
 }

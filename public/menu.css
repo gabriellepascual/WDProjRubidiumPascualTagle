@@ -197,3 +197,66 @@ nav {
 .footer-right img:hover {
     opacity: 1;
 }
+
+@media (max-width: 768px) {
+
+  nav {
+    padding: 10px 16px;
+    flex-wrap: wrap;
+  }
+
+  .website-name {
+    font-size: 18px;
+  }
+
+  .menu {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 6px;
+  }
+
+  .menu a {
+    font-size: 13px;
+    padding: 5px 8px;
+  }
+
+  .site-footer {
+    flex-direction: column;
+    gap: 6px;
+    height: auto;
+    padding: 10px;
+    text-align: center;
+  }
+
+  .footer-left {
+    align-items: center;
+    white-space: normal;
+  }
+
+  .footer-right {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 768px) {
+
+  .carouselMenu {
+    width: 95%;
+    margin-top: calc(var(--nav-height) + 16px);
+  }
+
+  .carousel-track {
+    animation-duration: 28s;
+  }
+
+  .card {
+    flex: 0 0 220px;
+    min-width: 220px;
+    height: auto;
+  }
+
+  .card p {
+    font-size: 0.75rem;
+    -webkit-line-clamp: 5;
+  }
+}

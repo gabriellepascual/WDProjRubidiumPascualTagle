@@ -96,3 +96,23 @@ nav {
 .footer-right img:hover {
     opacity: 1;
 }
+
+@media (max-width: 768px) {
+    .sources-wrapper {
+        width: 92%;
+    }
+
+    .gray-box p {
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    .sources-wrapper {
+        width: 96%;
+    }
+
+    .gray-box p {
+        font-size: 14px;
+    }
+}
