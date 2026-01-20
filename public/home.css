@@ -160,7 +160,6 @@ nav {
     nav {
         overflow-x: auto;
         white-space: nowrap;
-        -webkit-overflow-scrolling: touch;
         padding: 10px 16px;
     }
 
