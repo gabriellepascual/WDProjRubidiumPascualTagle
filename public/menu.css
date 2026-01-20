@@ -153,7 +153,6 @@ nav {
     line-height: 1.4;
     overflow: hidden;
     display: -webkit-box;
-    -webkit-line-clamp: 6;
     -webkit-box-orient: vertical;
 }
 
@@ -257,7 +256,6 @@ nav {
 
   .card p {
     font-size: 0.75rem;
-    -webkit-line-clamp: 5;
   }
 }
 
@@ -267,7 +265,6 @@ nav {
     gap: 10px;              
     overflow-x: auto;        
     white-space: nowrap;   
-    -webkit-overflow-scrolling: touch; 
     padding-bottom: 5px;    
   }
 

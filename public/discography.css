@@ -274,9 +274,16 @@ nav {
     justify-content: center;
   }
 
+@media (max-width: 768px) {
   .layout-switcher {
+    padding: 15px;
     text-align: center;
   }
+  
+  .layout-switcher button {
+    padding: 10px 16px;
+  }
+}
 
   #albums.album--vinyl {
     flex-wrap: wrap;
@@ -285,13 +292,12 @@ nav {
     padding: 10px 0;
   }
 
+ @media (max-width: 768px) {
   #albums.album--vinyl .album {
-    flex: 0 0 calc(33% - 12px); 
-    margin: 6px;
-    width: auto;
-    perspective: 500px;
-    overflow: visible;
+    flex: 0 0 calc(33.333% - 12px);
+    max-width: 140px;
   }
+}
 
   #albums.album--vinyl .album-covers {
     width: 140px;
@@ -330,17 +336,16 @@ nav {
 }
 
 @media (max-width: 768px) {
-  .menu {
-    display: flex;          
-    gap: 10px;              
-    overflow-x: auto;        
-    white-space: nowrap;   
-    -webkit-overflow-scrolling: touch; 
-    padding-bottom: 5px;    
+  nav {
+    padding: 10px 16px;
+    flex-wrap: wrap;
+    height: auto;
   }
 
-  .menu a {
-    flex: 0 0 auto;          
-    display: inline-block;
+  .menu {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 6px;
+    width: 100%;
   }
 }
