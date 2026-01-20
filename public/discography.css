@@ -328,3 +328,19 @@ nav {
   transform: rotate(360deg);
   transition: transform 1.2s linear;
 }
+
+@media (max-width: 768px) {
+  .menu {
+    display: flex;          
+    gap: 10px;              
+    overflow-x: auto;        
+    white-space: nowrap;   
+    -webkit-overflow-scrolling: touch; 
+    padding-bottom: 5px;    
+  }
+
+  .menu a {
+    flex: 0 0 auto;          
+    display: inline-block;
+  }
+}

@@ -224,3 +224,19 @@ nav {
     text-align: justify;
   }
 }
+
+@media (max-width: 768px) {
+  .menu {
+    display: flex;          
+    gap: 10px;              
+    overflow-x: auto;        
+    white-space: nowrap;   
+    -webkit-overflow-scrolling: touch; 
+    padding-bottom: 5px;    
+  }
+
+  .menu a {
+    flex: 0 0 auto;          
+    display: inline-block;
+  }
+}
