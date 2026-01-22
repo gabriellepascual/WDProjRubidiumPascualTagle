@@ -88,11 +88,115 @@ nav {
     padding: 20px 40px;
 }
 
+.member-pics img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.3s;
+  border: 2px;
+}
+
+.member:hover .member-pics img {
+  transform: scale(1.05);
+}
+
+#members {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 10px;
+}
+
+.member-dialog {
+    border: none;
+    border-radius: 12px;
+    padding: 0;
+    max-width: 500px;
+    width: 90%;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3);
+    position: relative;
+}
+
+.member-dialog::backdrop {
+    background: rgba(0, 0, 0, 0.7);
+}
+
+.member-dialog .dialog-content {
+    padding: 30px;
+    text-align: center;
+}
+
+.member-dialog .dialog-content img {
+    width: 100%;
+    max-width: 350px;
+    border-radius: 12px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.member-dialog .dialog-content h2 {
+    font-size: 28px;
+    font-weight: 700;
+    color: #ff3176;
+    margin: 0 0 20px 0;
+    letter-spacing: 1px;
+}
+
+.member-info {
+    text-align: left;
+    margin-top: 15px;
+    padding: 20px;
+    background-color: #ffeff5;
+    border-radius: 8px;
+}
+
+.member-info p {
+    font-size: 15px;
+    color: #333;
+    margin: 12px 0;
+    line-height: 1.6;
+}
+
+.member-info strong {
+    color: #ff3176;
+    font-weight: 600;
+    display: inline-block;
+    min-width: 100px;
+}
+
+.member-dialog .close-btn {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    border: none;
+    background: #f45990;
+    color: white;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    font-size: 20px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s;
+}
+
+.member-dialog .close-btn:hover {
+    background: #f0C89B;
+    transform: rotate(90deg);
+}
+
 .right-text {
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
+    align-items: center;
     max-width: 500px;
+    color:#ff3176;
 }
 
 .right-text h1 {
