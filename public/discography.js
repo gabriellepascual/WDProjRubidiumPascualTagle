@@ -6,7 +6,7 @@ document.addEventListener('DOMContentLoaded', function () {
   const closeBtn = document.getElementById('closeDialog');
   const dialogImage = document.getElementById('dialogImage');
   const dialogTitle = document.getElementById('dialogTitle');
-  const tracklistContainer = document.getElementById('tracklistContainer');
+  const tracklistCont = document.getElementById('tracklistCont');
 
  const albumData = {
   'THE STORY BEGINS': {
@@ -139,8 +139,8 @@ albums.forEach(album => {
     dialogTitle.textContent = title;
 
     if (imgElement) {
-      dialogImg.src = imgElement.src;
-      dialogImg.alt = title;
+      dialogImage.src = imgElement.src;
+      dialogImage.alt = title;
     }
 
     tracklistCont.innerHTML = '';
