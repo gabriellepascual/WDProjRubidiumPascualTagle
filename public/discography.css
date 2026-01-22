@@ -83,8 +83,33 @@ nav {
   padding-top: calc(var(--nav-height) + 10px);
 }
 
+.layout-switcher {
+  text-align: center;
+  padding: 20px;
+  font-size: 1px;
+  font-weight: 600;
+}
+
+.layout-switcher button {
+  margin: 0 5px;
+  padding: 8px 20px;
+  border: 3px solid #F45990;
+  background: white;
+  color: #F45990;
+  border-radius: 20px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: all 0.3s;
+}
+
+.layout-switcher button.is-active {
+  background: #F45990;
+  color: white;
+}
+
 .album {
   text-align: center;
+  cursor: pointer;
 }
 
 .album-covers {
@@ -99,6 +124,11 @@ nav {
   height: 100%;
   object-fit: cover;
   display: block;
+  transition: transform 0.3s;
+}
+
+.album:hover .album-covers img {
+  transform: scale(1.05);
 }
 
 #albums.album--grid {
@@ -115,10 +145,8 @@ nav {
 #albums.album--grid .title {
   margin-top: 8px;
   display: block;
-  margin-left: 25px;
 }
 
-/* VINYL LAYOUT */
 #albums.album--vinyl {
   display: flex;
   flex-wrap: wrap;
@@ -187,9 +215,84 @@ nav {
 
 .title {
   margin-top: 8px;
-  margin-right: 25px;
   font-weight: 600;
   font-size: 14px;
+}
+
+.album-dialog {
+  padding: 0;
+  border: none;
+  border-radius: 12px;
+  max-width: 700px;
+  width: 90%;
+}
+
+.dialog-content {
+  display: flex;
+  gap: 24px;
+  padding: 24px;
+}
+
+.dialog-left img {
+  width: 220px;
+  height: auto;
+  border-radius: 8px;
+}
+
+.dialog-right {
+  flex: 1;
+}
+
+.tracklist {
+  padding-left: 20px;
+  margin-top: 12px;
+}
+
+.tracklist li {
+  margin-bottom: 6px;
+  line-height: 1.4;
+}
+
+.album-dialog::backdrop {
+  background: rgba(0, 0, 0, 0.7);
+}
+
+@media (max-width: 600px) {
+  .dialog-content {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .dialog-left img {
+    width: 180px;
+  }
+
+  .dialog-right {
+    width: 100%;
+  }
+}
+
+.close-btn {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  border: none;
+  background: #F45990;
+  color: white;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  font-size: 20px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.4s;
+}
+
+.close-btn:hover {
+  background: #F0C89B;
+  transform: rotate(90deg);
 }
 
 .site-footer {
@@ -236,10 +339,10 @@ nav {
 }
 
 @media (max-width: 768px) {
-
   nav {
     padding: 10px 16px;
     flex-wrap: wrap;
+    height: auto;
   }
 
   .website-name {
@@ -250,11 +353,21 @@ nav {
     flex-wrap: wrap;
     justify-content: center;
     gap: 6px;
+    width: 100%;
   }
 
   .menu a {
     font-size: 13px;
     padding: 5px 8px;
+  }
+
+  .layout-switcher {
+    padding: 15px;
+    text-align: center;
+  }
+  
+  .layout-switcher button {
+    padding: 10px 16px;
   }
 
   .site-footer {
@@ -274,17 +387,6 @@ nav {
     justify-content: center;
   }
 
-@media (max-width: 768px) {
-  .layout-switcher {
-    padding: 15px;
-    text-align: center;
-  }
-  
-  .layout-switcher button {
-    padding: 10px 16px;
-  }
-}
-
   #albums.album--vinyl {
     flex-wrap: wrap;
     justify-content: center;
@@ -292,12 +394,10 @@ nav {
     padding: 10px 0;
   }
 
- @media (max-width: 768px) {
   #albums.album--vinyl .album {
     flex: 0 0 calc(33.333% - 12px);
     max-width: 140px;
   }
-}
 
   #albums.album--vinyl .album-covers {
     width: 140px;
@@ -322,30 +422,5 @@ nav {
     display: none;
     font-size: 12px;
     bottom: -20px;
-  }
-}
-
-.vinyl:hover {
-  transform: rotate(360deg);
-  transition: transform 1.2s linear;
-}
-
-.vinyl.active {
-  transform: rotate(360deg);
-  transition: transform 1.2s linear;
-}
-
-@media (max-width: 768px) {
-  nav {
-    padding: 10px 16px;
-    flex-wrap: wrap;
-    height: auto;
-  }
-
-  .menu {
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 6px;
-    width: 100%;
   }
 }
