@@ -10,7 +10,7 @@ document.addEventListener('DOMContentLoaded', function () {
   const Info = {
     'IM NAYEON': {
       information:
-        'Im Nayeon is the Lead Vocalist, Lead Dancer, and the Center of TWICE. She is the oldest member, born on September 22, 1995. She is known for her bunny teeth, strong vocals, and cheerful personality. She debuted solo with “POP!”, which became a viral hit worldwide.'
+        'Im Nayeon is the Lead Vocalist, Lead Dancer, and the Center of TWICE. She is the oldest member, born on September 22, 1995, she is known for her bunny teeth and outstanding visuals and strong vocals. Despite being the oldest member, she is the member wherein everyone in TWICE has to look after due to her clumsiness. Nayeon’s silly and jolly attitude overshadows her intelligence. She’s the first member of TWICE to debut solo with her successful single, “POP!”, creating a viral dance sensation internationally with the confusing hand choreography. As of writing this, she has released two (2) EPs, one (1) feature, and one (1) cover song. '
     },
     'YOO JEONGYEON': {
       information:
