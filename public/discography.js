@@ -10,31 +10,31 @@ document.addEventListener('DOMContentLoaded', function () {
 
  const albumData = {
   'THE STORY BEGINS': {
-    tracklist: ['Like OOH-AHH', 'Do It Again', 'Going Crazy', 'Truth', 'Candy Boy', 'Like OOH-AHH (Inst.)', 'Must Be Crazy']
+    tracklist: ['Like OOH-AHH', 'Do It Again', 'Going Crazy', 'Truth', 'Candy Boy', 'Like a Fool']
   },
   'PAGE TWO': {
-    tracklist: ['Cheer Up', 'Precious Love', 'Touchdown', 'Tuk Tok', 'Woohoo', 'My Headphones On', 'Cheer Up (Inst.)']
+    tracklist: ['Cheer Up', 'Precious Love', 'Touchdown', 'Tuk Tok', 'Woohoo', 'My Headphones On', 'I\'m Gonna Be A Star (Hidden)']
   },
   'TWICEcoaster: LANE 1': {
-    tracklist: ['TT', 'One in a Million', 'PONYTAIL', 'JELLY JELLY', 'NEXT PAGE', 'TT (Inst.)', 'One in a Million (Inst.)']
+    tracklist: ['TT', '1 TO 10', 'PONYTAIL', 'JELLY JELLY', 'NEXT PAGE', 'One In A Million']
   },
   'TWICEcoaster: LANE 2': {
-    tracklist: ['Knock Knock', 'SOON', 'SIGNAL', 'Ice Cream', 'Turtle']
+    tracklist: ['KNOCK KNOCK', 'Ice Cream', 'TT', '1 TO 10', 'PONYTAIL', 'JELLY JELLY', 'NEXT PAGE', 'One In A Million']
   },
   'SIGNAL': {
     tracklist: ['Signal', 'THREE TIMES A DAY', 'Only You', 'HOLD ME TIGHT', 'Eye Eye Eyes', 'Someone Like Me', 'Signal (Inst.)']
   },
   'twicetagram': {
-    tracklist: ['LIKEY', 'WOW', 'HO!', 'TURTLE', 'MISSING U', 'DING DONG', 'LOOK AT ME', 'DON\'T GIVE UP', '24/7', 'LOVE LINE', 'ROLLIN\'', 'YOU IN MY HEART', 'FFW']
+    tracklist: ['LIKEY', 'TURTLE', 'MISSING U', 'WOW', 'FFW', 'DING DONG', '24/7', 'LOOK AT ME', 'ROLLIN\'', 'LOVE LINE', 'DON\'T GIVE UP', 'ROLLIN\'', 'YOU IN MY HEART', 'JALJAYO GOOD NIGHT']
   },
   'Merry & Happy': {
-    tracklist: ['Merry & Happy', 'Heart Shaker', 'Merry & Happy (Ver. 2)', 'Heart Shaker (Inst.)']
+    tracklist: ['Heart Shaker', 'Merry & Happy', 'LIKEY', 'TURTLE', 'MISSING U', 'WOW', 'FFW', 'DING DONG', '24/7', 'LOOK AT ME', 'ROLLIN\'', 'LOVE LINE', 'DON\'T GIVE UP', 'ROLLIN\'', 'YOU IN MY HEART', 'JALJAYO GOOD NIGHT']
   },
   'What is Love?': {
-    tracklist: ['What is Love?', 'Sweet Talker', 'Ho!', 'Dejavu', 'Say Yes', 'What is Love? (Inst.)']
+    tracklist: ['What is Love?', 'Sweet Talker', 'HO!', 'DEJAVU', 'SAY YES']
   },
   'Summer Nights': {
-    tracklist: ['Dance The Night Away', 'Chillax', 'Shot thru the Heart', 'What You Waiting For', 'Dance The Night Away (Inst.)']
+    tracklist: ['Dance The Night Away', 'CHILLAX', 'Shot thru the Heart', 'What is Love?', 'Sweet Talker', 'HO!', 'DEJAVU', 'SAY YES']
   },
   'YES or YES': {
     tracklist: ['YES or YES', 'Say You Love Me', 'LaLaLa', 'Young & Wild', 'Sunset', 'After Moon', 'BDZ (Korean Version)']
