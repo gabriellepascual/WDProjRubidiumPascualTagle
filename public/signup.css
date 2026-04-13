@@ -1,0 +1,56 @@
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(to bottom right, #ff8ab3, #d9a6c9);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.signup-card {
+    background: #f3d7e2;
+    color: rgb(0, 0, 0);
+    padding: 30px;
+    border-radius: 25px;
+    width: 320px;
+    box-shadow: 0 0 0 10px #f8e4ec;
+}
+
+.signup-card h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.signup-card label {
+    display: block;
+    margin-top: 10px;
+    font-weight: 600;
+}
+
+.signup-card input,
+.signup-card select {
+    width: 100%;
+    padding: 8px;
+    border-radius: 12px;
+    border: none;
+    margin-top: 5px;
+}
+
+.radio-group {
+    display: flex;
+    gap: 15px;
+    margin-top: 5px;
+}
+
+button {
+    width: 100%;
+    margin-top: 20px;
+    padding: 10px;
+    border: none;
+    border-radius: 20px;
+    background-color: #ff8ab3;
+    color: rgb(0, 0, 0);
+    font-weight: 600;
+    cursor: pointer;
+}

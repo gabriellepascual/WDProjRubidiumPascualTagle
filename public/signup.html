@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up Form</title>
+
+    <link rel="stylesheet" href="signup.css">
+    <link rel="stylesheet" href="home.css">
+</head>
+
+<body>
+
+    <nav>
+        <div class="nav-left">
+            <img src="../assets/twicelogo.png" class="logo" alt="Twice Logo">
+            <span class="website-name">Stardust Performers</span>
+        </div> 
+        <ul class="menu">
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="menu.html">Menu</a></li>
+            <li><a href="members.html">Members</a></li>
+            <li><a href="debut.html">Debut</a></li>
+            <li><a href="discography.html">Discography</a></li>
+            <li><a href="credentials.html">Credentials</a></li>
+            <li><a href="quiz.html">Quiz</a></li>
+            <li><a href="leaderboard.html">Leaderboard</a></li>
+            <li><a href="profile.html">Profile</a></li>
+            <li><a href="sources.html" class="active">Sources</a></li>
+        </ul>
+    </nav>
+
+    <section class="signup-section">
+
+        <div class="signup-card">
+            <h2>Sign Up</h2>
+
+            <form id="signupForm">
+
+                <label>Username:</label>
+                <input type="text" id="username" required>
+
+                <label>Password:</label>
+                <input type="password" id="password" required>
+
+                <label>Status:</label>
+                <div class="radio-group">
+                    <label><input type="radio" name="status" value="ONCE"> ONCE</label>
+                    <label><input type="radio" name="status" value="NON-ONCE"> NON-ONCE</label>
+                </div>
+
+                <label>Bias:</label>
+                <select id="bias">
+                    <option value="">N/A</option>
+                    <option>Nayeon</option>
+                    <option>Jeongyeon</option>
+                    <option>Momo</option>
+                    <option>Sana</option>
+                    <option>Jihyo</option>
+                    <option>Mina</option>
+                    <option>Dahyun</option>
+                    <option>Chaeyoung</option>
+                    <option>Tzuyu</option>
+                </select>
+
+                <label>Favorite Title Track:</label>
+                <input type="text" id="favTrack" placeholder="N/A">
+
+                <label>Favorite Album:</label>
+                <input type="text" id="favAlbum" placeholder="N/A">
+
+                <button type="submit">Create Account</button>
+
+            </form>
+        </div>
+
+    </section>
+
+    <script src="main.js"></script>
+</body>
+</html>
