@@ -70,7 +70,7 @@ document.addEventListener('DOMContentLoaded', function () {
     tracklist: ['POP!', 'NO PROBLEM', 'LOVE COUNTDOWN', 'CANDYFLOSS', 'ALL OR NOTHING', 'HAPPY BIRTHDAY TO YOU', 'SUNSET']
   },
   'BETWEEN 1&2': {
-    tracklist: ['Talk that Talk', 'Queen of Hearts', 'Basics', 'Trouble', 'Brave', 'Gone', 'When We Were Kids', 'Flow Like Waves', 'Celebrate']
+    tracklist: ['Talk that Talk', 'Queen of Hearts', 'Basics', 'Trouble', 'Brave', 'Gone', 'When We Were Kids']
   },
   'MOONLIGHT SUNRISE':{
     tracklist:['MOONLIGHT SUNRISE']
