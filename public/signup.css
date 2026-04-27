@@ -1,11 +1,81 @@
+:root {
+    --nav-height: 72px;
+}
+
+* {
+    box-sizing: border-box;
+}
+
 body {
     margin: 0;
-    font-family: 'Poppins', sans-serif;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
     background: linear-gradient(to bottom right, #ff8ab3, #d9a6c9);
+}
+
+nav {
+    background-color: #ffeff5;
+    padding: 10px 26px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    height: var(--nav-height);
+    z-index: 100;
+}
+
+.nav-left {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.logo {
+    width: 42px;
+    height: auto;
+}
+
+.website-name {
+    font-size: 22px;
+    font-weight: 700;
+    color: #000;
+    letter-spacing: 0.3px;
+}
+
+.menu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 10px;
+}
+
+.menu li {
+    list-style: none;
+}
+
+.menu a {
+    text-decoration: none;
+    color: #fe84af;
+    font-weight: 500;
+    font-size: 15px;
+    padding: 6px 10px;
+}
+
+.menu a:hover,
+.menu a.active {
+    color: #ff3176;
+}
+
+.signup-section {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    min-height: 100vh;
+    padding-top: var(--nav-height);
 }
 
 .signup-card {
@@ -38,9 +108,22 @@ body {
 }
 
 .radio-group {
-    display: flex;
-    gap: 15px;
-    margin-top: 5px;
+        display: flex;
+        gap: 25px;
+        margin-top: 0px;
+}
+
+.radio-group label {
+        display: flex;
+        align-items: center;
+        gap: 6px;
+        margin-bottom: 0;
+        cursor: pointer;
+}
+
+.radio-group input {
+        width: auto;
+        margin: 0;
 }
 
 button {

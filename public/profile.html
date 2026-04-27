@@ -6,7 +6,7 @@
     <title>Profile</title>
 
     <link rel="stylesheet" href="profile.css">
-    <link rel="stylesheet" href="home.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;800&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -32,23 +32,28 @@
 
 <main class="profile-section">
 
-    <h1>Welcome, <span id="displayUsername">User</span>!</h1>
+    <h1 id="welcomeText">Welcome, <span id="displayUsername">User</span>!</h1>
 
-    <div class="profile-row">
+    <p id="noAccountMsg" style="display:none;">
+        Don't have an account yet? 
+        <a href="signup.html">Sign Up!</a>
+    </p>
+
+    <div class="profile-row" id="profileContent">
         <div class="pill">Bias: <span id="bias"></span></div>
         <div class="pill">Favorite Track: <span id="track"></span></div>
         <div class="pill">Favorite Album: <span id="album"></span></div>
     </div>
 
-    <div class="score-box">
-    <p>
-        TWICE’s Quiz Scores:
-        <a href="scores.html">View Scores</a>
-    </p>
-</div>
+    <div class="score-box" id="scoreBox">
+        <p>
+            TWICE's Quiz Scores:
+            <a href="scores.html">View Scores</a>
+        </p>
+    </div>
 
 </main>
 
-<script src="main.js"></script>
+<script src="profile.js"></script>
 </body>
 </html>

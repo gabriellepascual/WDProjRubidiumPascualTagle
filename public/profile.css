@@ -1,11 +1,100 @@
+:root {
+    --nav-height: 72px;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+    background-color: #ffffff;
+    color: #000;
+}
+
+nav {
+    background-color: #ffeff5;
+    padding: 10px 26px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    height: var(--nav-height);
+    z-index: 100;
+}
+
+.nav-left {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.logo {
+    width: 42px;
+    height: auto;
+}
+
+.website-name {
+    font-size: 22px;
+    font-weight: 700;
+    color: #000;
+    letter-spacing: 0.3px;
+}
+
+.menu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 10px;
+}
+
+.menu li {
+    list-style: none;
+}
+
+.menu a {
+    text-decoration: none;
+    color: #fe84af;
+    font-weight: 500;
+    font-size: 15px;
+    padding: 6px 10px;
+}
+
+.menu a:hover,
+.menu a.active {
+    color: #ff3176;
+    font-weight: 700;
+}
+
 .profile-section {
-    margin-top: 80px;
+    margin-top: var(--nav-height);
     padding: 40px;
     text-align: center;
 }
 
-body {
-    background-color: #ffffff !important;
+.profile-section h1 {
+    color: #fe84af; 
+}
+
+#noAccountMsg {
+    font-size: 16px;
+    margin-top: 20px;
+}
+
+#noAccountMsg a {
+    color: #ff3176;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+#noAccountMsg a:hover {
+    text-decoration: underline;
 }
 
 .profile-row {
@@ -34,8 +123,4 @@ body {
     color: black;
     text-decoration: underline;
     font-weight: 600;
-}
-
-.profile-section h1 {
-    color: #fe84af; 
 }
