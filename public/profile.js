@@ -17,3 +17,7 @@ if (!username || username.trim() === "" || loggedIn !== "true") {
     document.getElementById("track").textContent = track || "N/A";
     document.getElementById("album").textContent = album || "N/A";
 }
+
+function goToSettings() {
+    window.location.href = "settings.html";
+}

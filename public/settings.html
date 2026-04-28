@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Settings</title>
+
+    <link rel="stylesheet" href="settings.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;800&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+<nav>
+    <div class="nav-left">
+        <img src="../assets/twicelogo.png" class="logo" alt="Twice Logo">
+        <span class="website-name">Stardust Performers</span>
+    </div> 
+    <ul class="menu">
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="menu.html">Menu</a></li>
+        <li><a href="members.html">Members</a></li>
+        <li><a href="debut.html">Debut</a></li>
+        <li><a href="discography.html">Discography</a></li>
+        <li><a href="credentials.html">Credentials</a></li>
+        <li><a href="quiz.html">Quiz</a></li>
+        <li><a href="leaderboard.html">Leaderboard</a></li>
+        <li><a href="profile.html">Profile</a></li>
+        <li><a href="sources.html">Sources</a></li>
+    </ul>
+</nav>
+
+<main class="settings-section">
+
+    <h1>Settings</h1>
+
+    <div class="settings-card">
+
+        <label>Username</label>
+        <input type="text" id="username">
+
+        <label>Bias</label>
+        <select id="bias">
+            <option value="">N/A</option>
+            <option>Nayeon</option>
+            <option>Jeongyeon</option>
+            <option>Momo</option>
+            <option>Sana</option>
+            <option>Jihyo</option>
+            <option>Mina</option>
+            <option>Dahyun</option>
+            <option>Chaeyoung</option>
+            <option>Tzuyu</option>
+        </select>
+        <button onclick="deleteField('bias')" class="delete-btn">Delete</button>
+
+        <label>Favorite Track</label>
+        <input type="text" id="track">
+        <button onclick="deleteField('favTrack')" class="delete-btn">Delete</button>
+
+        <label>Favorite Album</label>
+        <input type="text" id="album">
+        <button onclick="deleteField('favAlbum')" class="delete-btn">Delete</button>
+
+        <button onclick="saveChanges()" class="save-btn">Save Changes</button>
+        <button onclick="goBack()" class="back-btn">← Back to Profile</button>
+
+    </div>
+
+</main>
+
+<script src="settings.js"></script>
+
+</body>
+</html>
