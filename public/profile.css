@@ -64,9 +64,14 @@ nav {
     font-weight: 500;
     font-size: 15px;
     padding: 6px 10px;
+    transition: 0.2s;
 }
 
-.menu a:hover,
+.menu a:hover {
+    color: #ff3176;
+    font-weight: 700;
+}
+
 .menu a.active {
     color: #ff3176;
     font-weight: 700;
@@ -123,4 +128,14 @@ nav {
     color: black;
     text-decoration: underline;
     font-weight: 600;
+}
+
+#noAccountMsg a {
+    color: #ff3176;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+#noAccountMsg a:hover {
+    text-decoration: underline;
 }
