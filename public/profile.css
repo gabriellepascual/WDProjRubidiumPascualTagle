@@ -157,12 +157,15 @@ nav {
     z-index: 200;
 }
 
-.settings-top button {
-    background-color: #ff8ab3;
-    border: none;
-    border-radius: 50%;
+.settings-top img {
     width: 45px;
     height: 45px;
-    font-size: 18px;
+    object-fit: cover;
+    border-radius: 50%;
     cursor: pointer;
+    transition: 0.2s;
+}
+
+.settings-top img:hover {
+    transform: scale(1.1);
 }
